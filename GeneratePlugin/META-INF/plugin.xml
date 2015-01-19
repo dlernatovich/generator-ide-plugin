@@ -40,6 +40,7 @@
             <add-to-group group-id="MainMenu"
                           anchor="before"
                           relative-to-action="CodeMenu"/>
+            <!--Java group-->
             <group text="Java" id="ArtPlugin.Java" popup="true" icon="/icons/java_icon.png">
                 <group text="File" id="ArtPlugin.FileActions" popup="true" icon="/icons/file_icon.png">
                     <action class="actions.sections.java.file.ReadTextFileAction" id="ArtPlugin.ReadTextFromFile"
@@ -57,13 +58,34 @@
 
             </group>
 
+            <!--Android group-->
             <group text="Android" id="ArtPlugin.Android" popup="true" icon="/icons/android_icon.png">
+                <!--Activity-->
                 <group text="Activity" id="ArtPlugin.Activity" popup="true" icon="/icons/activity_icon.png">
                     <action text="Base activity methods" id="ArtPlugin.BaseActivityMethods"
                             class="actions.sections.android.activity.BaseActivityAction"/>
                 </group>
+
+                <!--Async-->
+                <group text="Async" id="ArtPlugin.Async" popup="true" icon="/icons/async_icon.png">
+                    <action text="Repetitive task" id="ArtPlugin.RepetitiveAction"
+                            class="actions.sections.android.async.RepititiveAction"/>
+                </group>
+
+                <!--Intent-->
+                <group text="Intent" id="ArtPlugin.Intent" popup="true" icon="/icons/intent_icon.png">
+                    <action text="Intent actions" id="ArtPlugin.IntentAction"
+                            class="actions.sections.android.intents.IntentHelperAction"/>
+                </group>
+
+                <group text="XML" id="ArtPlugin.XML" popup="true" icon="/icons/xml_icon.png">
+                    <action text="ImageView with crop style" id="ArtPlugin.ImageViewCropStyle"
+                            class="actions.sections.android.xml.CropStyleAction"/>
+                </group>
+
             </group>
 
+            <!--Plugin group-->
             <group text="Plugin development" id="ArtPlugin.PluginDevelopment" popup="true"
                    icon="/icons/plugin_icon.png">
                 <group text="IntelliJ IDEA" id="ArtPlugin.IntelliJIDEA" popup="true" icon="/icons/idea_icon.png">
