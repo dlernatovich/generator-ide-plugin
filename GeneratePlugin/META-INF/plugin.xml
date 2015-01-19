@@ -41,8 +41,13 @@
                           anchor="before"
                           relative-to-action="CodeMenu"/>
 
-            <group text="File actions" id="ArtPlugin.FileActions" popup="true">
-                <action class="actions.ReadTextFileAction" id="ArtPlugin.ReadTextFromFile" text="Read text file"/>
+            <group text="File" id="ArtPlugin.FileActions" popup="true">
+                <action class="actions.sections.java.file.ReadTextFileAction" id="ReadTextFromFile"
+                        text="Read text file 1"/>
+                <action class="actions.sections.java.file.WriteObjectAction" id="WriteObject"
+                        text="Write object to file"/>
+                <action class="actions.sections.java.file.ReadObjectAction" id="ReadObject"
+                        text="Read object from file"/>
             </group>
 
         </group>

@@ -1,14 +1,15 @@
-package actions;
+package actions.sections.java.file;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.project.Project;
 import helpers.EditorModifyHelper;
 
 /**
  * Created by dlernatovich on 11/27/14.
  */
 public class ReadTextFileAction extends AnAction {
-    private static final String CODE = " /**\n" +
+    private final String CODE = " /**\n" +
             "     * Use the org.apache.commons.io utils for this method\n" +
             "     * @param file\n" +
             "     * @return\n" +
@@ -24,10 +25,9 @@ public class ReadTextFileAction extends AnAction {
             "        return text;\n" +
             "    }";
 
-    @java.lang.Override
-    public void actionPerformed(final AnActionEvent anActionEvent) {
-        EditorModifyHelper.writeCode(anActionEvent.getProject(), CODE);
+    @Override
+    public void actionPerformed(AnActionEvent e) {
+        Project project = e.getProject();
+        EditorModifyHelper.writeCode(project, CODE);
     }
-
-
 }
