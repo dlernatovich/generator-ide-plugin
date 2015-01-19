@@ -7,31 +7,16 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
  * Created by dlernatovich on 1/19/15.
  */
 public class EditTextErrorAction extends BaseAction {
-    private final String CODE = "private boolean checkField() {\n" +
-            "boolean result = true;\n" +
-            "boolean cancel = false;\n" +
-            "View focusView = null;\n" +
-            "if (nameEditText.getText().toString().trim().equalsIgnoreCase(\"\")) {\n" +
-            "nameEditText.setError(getString(R.string.error_field_required));\n" +
-            "focusView = nameEditText;\n" +
-            "cancel = true;\n" +
-            "}\n" +
-            "if (longtitudeEditText.getText().toString().trim().equalsIgnoreCase(\"\")) {\n" +
-            "longtitudeEditText.setError(getString(R.string.error_field_required));\n" +
-            "focusView = longtitudeEditText;\n" +
-            "cancel = true;\n" +
-            "}\n" +
-            "if (lattitudeEditText.getText().toString().trim().equalsIgnoreCase(\"\")) {\n" +
-            "lattitudeEditText.setError(getString(R.string.error_field_required));\n" +
-            "focusView = lattitudeEditText;\n" +
-            "cancel = true;\n" +
-            "}\n" +
-            "if (cancel) {\n" +
-            "result = false;\n" +
-            "focusView.requestFocus();\n" +
-            "}\n" +
-            "return result;\n" +
-            "}";
+    private final String CODE = "/**\n" +
+            "     * Method which provide the set error to EditText\n" +
+            "     *\n" +
+            "     * @param view      current EditText\n" +
+            "     * @param errorText error text\n" +
+            "     */\n" +
+            "    public void setErrorToEditText(EditText view, String errorText) {\n" +
+            "        view.setError(errorText);\n" +
+            "        view.requestFocus();\n" +
+            "    }";
 
     @Override
     public void actionPerformed(AnActionEvent e) {
