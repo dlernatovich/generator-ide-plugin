@@ -1,16 +1,14 @@
 package actions.sections.java.file;
 
-import com.intellij.openapi.actionSystem.AnAction;
+import actions.abs.BaseAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.project.Project;
-import helpers.EditorModifyHelper;
 
 /**
  * Created by dlernatovich on 11/28/14.
  */
-public class WriteObjectAction extends AnAction {
+public class WriteObjectAction extends BaseAction {
 
-    private final String CODE = "/**\n" +
+    private String CODE = "/**\n" +
             "     * Method which provide to write object inside the file\n" +
             "     * @param o\n" +
             "     * @param filePath\n" +
@@ -28,7 +26,6 @@ public class WriteObjectAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
-        Project project = e.getProject();
-        EditorModifyHelper.writeCode(project, CODE);
+        writeCode(e, CODE);
     }
 }

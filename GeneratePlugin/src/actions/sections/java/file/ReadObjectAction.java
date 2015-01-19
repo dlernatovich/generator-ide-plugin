@@ -1,14 +1,12 @@
 package actions.sections.java.file;
 
-import com.intellij.openapi.actionSystem.AnAction;
+import actions.abs.BaseAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.project.Project;
-import helpers.EditorModifyHelper;
 
 /**
  * Created by dlernatovich on 11/28/14.
  */
-public class ReadObjectAction extends AnAction {
+public class ReadObjectAction extends BaseAction {
 
     private final String CODE = "/**\n" +
             "     * Method which provide read object from file\n" +
@@ -30,7 +28,6 @@ public class ReadObjectAction extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
-        Project project = e.getProject();
-        EditorModifyHelper.writeCode(project, CODE);
+        writeCode(e, CODE);
     }
 }
