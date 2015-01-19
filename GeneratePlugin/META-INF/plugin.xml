@@ -42,6 +42,12 @@
                           relative-to-action="CodeMenu"/>
             <!--Java group-->
             <group text="Java" id="ArtPlugin.Java" popup="true" icon="/icons/java_icon.png">
+
+                <group text="Classes" id="ArtPlugin.Classes" popup="true" icon="/icons/classes_icon.png">
+                    <action text="Comparator example" id="ArtPlugin.ComparatorExample"
+                            class="actions.sections.java.classes.ComparatorExampleAction"/>
+                </group>
+
                 <group text="File" id="ArtPlugin.FileActions" popup="true" icon="/icons/file_icon.png">
                     <action class="actions.sections.java.file.ReadTextFileAction" id="ArtPlugin.ReadTextFromFile"
                             text="Read text file"/>
@@ -96,8 +102,14 @@
                             class="actions.sections.android.xml.CropStyleAction"/>
                     <action text="Open keyboard by request" id="ArtPlugin.KeyboardByRequest"
                             class="actions.sections.android.xml.OpenKeyboardRequestAction"/>
+                    <action text="ListView with transparent scrolling" id="ArtPlugin.ListTransparentScrolling"
+                            class="actions.sections.android.xml.ExampleListViewAction"/>
                 </group>
 
+                <group text="View" id="ArtPlugin.View" popup="true" icon="/icons/view_icon.png">
+                    <action text="Error in EditText" id="ArtPlugin.EditTextError"
+                            class="actions.sections.android.view.EditTextErrorAction"/>
+                </group>
             </group>
 
             <!--Plugin group-->
