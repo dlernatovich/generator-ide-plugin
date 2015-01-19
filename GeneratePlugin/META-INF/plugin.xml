@@ -49,6 +49,9 @@
                             text="Write object to file"/>
                     <action class="actions.sections.java.file.ReadObjectAction" id="ArtPlugin.ReadObject"
                             text="Read object from file"/>
+
+                    <action text="Get files by extension" id="ArtPlugin.FileByExt"
+                            class="actions.sections.java.file.GetFileByExtAction"/>
                 </group>
 
                 <group text="Formatting" id="ArtPlugin.Formatting" popup="true" icon="/icons/formatting_icon.png">
@@ -72,6 +75,16 @@
                             class="actions.sections.android.async.RepititiveAction"/>
                 </group>
 
+                <group text="Maps" id="ArtPlugin.Maps" popup="true" icon="/icons/maps_icon.png">
+                    <action text="Navigate with Google Maps" id="ArtPlugin.NavigateWithMaps"
+                            class="actions.sections.android.maps.RoutingWithMapsAction"/>
+                </group>
+
+                <!--Notification-->
+                <group text="Notification" id="ArtPlugin.Notification" popup="true" icon="/icons/notification_icon.png">
+                    <action text="Notifcation helper" id="ArtPlugin.NotificationHelper"
+                            class="actions.sections.android.notification.NotificationHelperAction"/>
+                </group>
                 <!--Intent-->
                 <group text="Intent" id="ArtPlugin.Intent" popup="true" icon="/icons/intent_icon.png">
                     <action text="Intent actions" id="ArtPlugin.IntentAction"
@@ -81,6 +94,8 @@
                 <group text="XML" id="ArtPlugin.XML" popup="true" icon="/icons/xml_icon.png">
                     <action text="ImageView with crop style" id="ArtPlugin.ImageViewCropStyle"
                             class="actions.sections.android.xml.CropStyleAction"/>
+                    <action text="Open keyboard by request" id="ArtPlugin.KeyboardByRequest"
+                            class="actions.sections.android.xml.OpenKeyboardRequestAction"/>
                 </group>
 
             </group>
