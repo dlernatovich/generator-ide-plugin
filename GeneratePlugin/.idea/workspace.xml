@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc7a8caf-b206-453f-b1c4-9991d1d95366" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/views/BaseView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/callbacks/DialogActionCallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/helpers/DialogHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/runtime/MainDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/sections/java/file/ReadObjectAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/sections/java/file/WriteObjectAction.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GeneratePlugin/actions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GeneratePlugin/actions/ReadTextFileAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GeneratePlugin/helpers/.gitignore" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/ReadTextFileAction.java" afterPath="$PROJECT_DIR$/src/actions/sections/java/file/ReadTextFileAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cc7a8caf-b206-453f-b1c4-9991d1d95366" name="Default" comment="" />
     <ignored path="GeneratePlugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
