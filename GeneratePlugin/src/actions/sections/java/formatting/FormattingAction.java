@@ -29,4 +29,6 @@ public class FormattingAction extends BaseAction {
     public void actionPerformed(AnActionEvent e) {
         writeCode(e, CODE);
     }
+
+
 }

@@ -40,8 +40,8 @@
             <add-to-group group-id="MainMenu"
                           anchor="before"
                           relative-to-action="CodeMenu"/>
-            <group text="Java" id="ArtPlugin.Java" popup="true">
-                <group text="File" id="ArtPlugin.FileActions" popup="true">
+            <group text="Java" id="ArtPlugin.Java" popup="true" icon="/icons/java_icon.png">
+                <group text="File" id="ArtPlugin.FileActions" popup="true" icon="/icons/file_icon.png">
                     <action class="actions.sections.java.file.ReadTextFileAction" id="ArtPlugin.ReadTextFromFile"
                             text="Read text file"/>
                     <action class="actions.sections.java.file.WriteObjectAction" id="ArtPlugin.WriteObject"
@@ -50,9 +50,29 @@
                             text="Read object from file"/>
                 </group>
 
-                <group text="Formatting" id="ArtPlugin.Formatting" popup="true">
+                <group text="Formatting" id="ArtPlugin.Formatting" popup="true" icon="/icons/formatting_icon.png">
                     <action class="actions.sections.java.formatting.FormattingAction" id="ArtPlugin.FormatDouble"
                             text="Format Double value"/>
+                </group>
+
+            </group>
+
+            <group text="Android" id="ArtPlugin.Android" popup="true" icon="/icons/android_icon.png">
+                <group text="Activity" id="ArtPlugin.Activity" popup="true" icon="/icons/activity_icon.png">
+                    <action text="Base activity methods" id="ArtPlugin.BaseActivityMethods"
+                            class="actions.sections.android.activity.BaseActivityAction"/>
+                </group>
+            </group>
+
+            <group text="Plugin development" id="ArtPlugin.PluginDevelopment" popup="true"
+                   icon="/icons/plugin_icon.png">
+                <group text="IntelliJ IDEA" id="ArtPlugin.IntelliJIDEA" popup="true" icon="/icons/idea_icon.png">
+                    <action class="actions.sections.plugin.intellijidea.GroupGenerationAction"
+                            id="ArtPlugin.GenerateGroup"
+                            text="Generate group"/>
+                    <action class="actions.sections.plugin.intellijidea.ActionGenerationAction"
+                            id="ArtPlugin.GenerateAction"
+                            text="Generate action"/>
                 </group>
             </group>
 
