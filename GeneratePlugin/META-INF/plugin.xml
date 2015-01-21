@@ -110,6 +110,11 @@
                     <action text="Error in EditText" id="ArtPlugin.EditTextError"
                             class="actions.sections.android.view.EditTextErrorAction"/>
                 </group>
+
+                <group text="Helpers" id="ArtPlugin.Helpers" popup="true" icon="/icons/helper_icon.png">
+                    <action text="Services Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.ServiceHelperAction"/>
+                </group>
             </group>
 
             <!--Plugin group-->
