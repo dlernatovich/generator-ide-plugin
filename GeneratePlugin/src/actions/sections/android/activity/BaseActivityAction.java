@@ -73,6 +73,10 @@ public class BaseActivityAction extends BaseAction {
             "            }\n" +
             "        }\n" +
             "        return false;\n" +
+            "    }" +
+            "" +
+            "protected void setOnClickListener(View view) {\n" +
+            "        view.setOnClickListener(this);\n" +
             "    }";
 
     @Override
