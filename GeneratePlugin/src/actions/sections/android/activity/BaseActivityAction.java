@@ -37,6 +37,42 @@ public class BaseActivityAction extends BaseAction {
             "    \n" +
             "    private String getFTag() {\n" +
             "        return getClass().getName();\n" +
+            "    }" +
+            "" +
+            "/**\n" +
+            "     * Method which provide starting the Activity\n" +
+            "     *\n" +
+            "     * @param activtyClass activity which should be starting\n" +
+            "     */\n" +
+            "    protected void startActivity(Class activtyClass) {\n" +
+            "        startActivity(new Intent(this, activtyClass));\n" +
+            "    }\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide starting the Service\n" +
+            "     *\n" +
+            "     * @param serviceClass service which should be starting\n" +
+            "     */\n" +
+            "    protected void startService(Class serviceClass) {\n" +
+            "        if (!isMyServiceRunning(serviceClass)) {\n" +
+            "            startService(new Intent(this, serviceClass));\n" +
+            "        }\n" +
+            "    }\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide the service running checking\n" +
+            "     *\n" +
+            "     * @param serviceClass current service\n" +
+            "     * @return checking results\n" +
+            "     */\n" +
+            "    private boolean isMyServiceRunning(Class<?> serviceClass) {\n" +
+            "        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);\n" +
+            "        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {\n" +
+            "            if (serviceClass.getName().equals(service.service.getClassName())) {\n" +
+            "                return true;\n" +
+            "            }\n" +
+            "        }\n" +
+            "        return false;\n" +
             "    }";
 
     @Override
