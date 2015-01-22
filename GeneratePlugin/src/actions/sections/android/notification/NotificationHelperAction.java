@@ -207,6 +207,43 @@ public class NotificationHelperAction extends BaseAction {
             "        NotificationManager notificationManager = (NotificationManager) currentActivity.getSystemService(\n" +
             "                Activity.NOTIFICATION_SERVICE);\n" +
             "        notificationManager.notify(NOTIFICATION_ID, builder.build());\n" +
+            "    }" +
+            "" +
+            "/**\n" +
+            "     * Method which provide the show notification from the activity\n" +
+            "     *\n" +
+            "     * @param currentActivity current activity\n" +
+            "     * @param intent          intent which should open when tap on notification\n" +
+            "     * @param title           notification title\n" +
+            "     * @param contentText     notification text\n" +
+            "     */\n" +
+            "    public static void showNotification(Context currentActivity,\n" +
+            "                                        Intent intent,\n" +
+            "                                        int appIcon,\n" +
+            "                                        String title,\n" +
+            "                                        String contentText) {\n" +
+            "\n" +
+            "        //Get current application icon ID\n" +
+            "\n" +
+            "        //Build the intent\n" +
+            "        PendingIntent pendingIntent = PendingIntent.getActivity(currentActivity, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);\n" +
+            "\n" +
+            "        //Create notification builder\n" +
+            "        NotificationCompat.Builder builder = new NotificationCompat.Builder(currentActivity);\n" +
+            "        builder.setSmallIcon(appIcon);\n" +
+            "        builder.setContentIntent(pendingIntent);\n" +
+            "        builder.setAutoCancel(true);\n" +
+            "        builder.setLargeIcon(BitmapFactory.decodeResource(currentActivity.getResources(), appIcon));\n" +
+            "        builder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));\n" +
+            "\n" +
+            "        //Set texts to notification\n" +
+            "        builder.setContentTitle(title);\n" +
+            "        builder.setContentText(contentText);\n" +
+            "\n" +
+            "        //Show the notification\n" +
+            "        NotificationManager notificationManager = (NotificationManager) currentActivity.getSystemService(\n" +
+            "                Activity.NOTIFICATION_SERVICE);\n" +
+            "        notificationManager.notify(NOTIFICATION_ID, builder.build());\n" +
             "    }";
 
     @Override
