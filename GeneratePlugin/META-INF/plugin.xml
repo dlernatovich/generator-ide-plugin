@@ -64,6 +64,10 @@
                     <action class="actions.sections.java.formatting.FormattingAction" id="ArtPlugin.FormatDouble"
                             text="Format Double value"/>
                 </group>
+                <group text="Arrays" id="ArtPlugin.Arrays" popup="true" icon="/icons/formatting_icon.png">
+                    <action class="actions.sections.java.arrays.ArrayFilterAction" id="ArtPlugin.FormatDouble"
+                            text="Array filter"/>
+                </group>
 
             </group>
 
@@ -104,6 +108,8 @@
                             class="actions.sections.android.xml.OpenKeyboardRequestAction"/>
                     <action text="ListView with transparent scrolling" id="ArtPlugin.ListTransparentScrolling"
                             class="actions.sections.android.xml.ExampleListViewAction"/>
+                    <action text="Shape sample" id="ArtPlugin.ListTransparentScrolling"
+                            class="actions.sections.android.xml.ShapeSampleAction"/>
                 </group>
 
                 <group text="View" id="ArtPlugin.View" popup="true" icon="/icons/view_icon.png">
@@ -114,6 +120,18 @@
                 <group text="Helpers" id="ArtPlugin.Helpers" popup="true" icon="/icons/helper_icon.png">
                     <action text="Services Helper" id="ArtPlugin.ServiceHelperClass"
                             class="actions.sections.android.helpers.ServiceHelperAction"/>
+                    <action text="Badger Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.BadgerHelperAction"/>
+                    <action text="Broadcast Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.BroadcastHelperAction"/>
+                    <action text="Format Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.FormatHelperAction"/>
+                    <action text="Notification Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.NotificationHelperAction"/>
+                    <action text="Random Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.RandomHelperAction"/>
+                    <action text="Shared Preferences Helper" id="ArtPlugin.ServiceHelperClass"
+                            class="actions.sections.android.helpers.SharedPrefaranceHelperAction"/>
                 </group>
             </group>
 
