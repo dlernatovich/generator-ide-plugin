@@ -42,4 +42,31 @@ class BaseViewController:UIViewController {
         NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: Selector(selectorID), userInfo: nil, repeats: false);
     }
     
+    func setNavigationBarImage(imageName:String){
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: imageName), forBarMetrics: UIBarMetrics.Default);
+    }
+    
+    func setNavigationBarHeigh(heigh:CGFloat){
+        var oldFrame:CGRect! = self.navigationController?.navigationBar.frame as CGRect!;
+        self.navigationController?.navigationBar.frame = CGRectMake(0, 0, oldFrame.width, heigh);
+        
+    }
+    
+    
+    func enableNavigationMenuRecognizer(){
+        if((self.revealViewController()) != nil){
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer());
+        }
+    }
+    
+    func onOpenNavigationMenu(){
+        if((self.revealViewController()) != nil){
+            self.revealViewController().revealToggleAnimated(true);
+        }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true;
+    }
+    
 }

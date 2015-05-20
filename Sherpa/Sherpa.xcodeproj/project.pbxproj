@@ -26,6 +26,13 @@
 		015986251B0BA7F100AAE34A /* ControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015986241B0BA7F100AAE34A /* ControllerConstants.swift */; };
 		01D098871B0CACC40098795C /* sign_in_edittext.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D098861B0CACC40098795C /* sign_in_edittext.png */; };
 		01D0988C1B0CB4370098795C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0988B1B0CB4370098795C /* SWRevealViewController.m */; };
+		01D0988F1B0CBC020098795C /* hm_btn_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D0988E1B0CBC020098795C /* hm_btn_menu.png */; };
+		01D098911B0CBD6F0098795C /* menu_bar_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D098901B0CBD6F0098795C /* menu_bar_button.png */; };
+		01D098931B0CCAF30098795C /* hm_image_paloalto.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D098921B0CCAF30098795C /* hm_image_paloalto.png */; };
+		01D098951B0CD6C20098795C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D098941B0CD6C20098795C /* MenuTableViewController.swift */; };
+		01D098971B0CE8120098795C /* hm_badge_picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D098961B0CE8120098795C /* hm_badge_picture.png */; };
+		01D098991B0CEE180098795C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D098981B0CEE180098795C /* BaseTableViewController.swift */; };
+		01F01A391B0CF91600FD7494 /* CircledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F01A381B0CF91600FD7494 /* CircledImageView.swift */; };
 		01F312E11B0C9CB0008E1F52 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F312E01B0C9CB0008E1F52 /* AnimationViewController.swift */; };
 		7AFE31FA7B0B7AC2F2DC726C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BC9E78F955C4DB66C86547 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +72,13 @@
 		01D098861B0CACC40098795C /* sign_in_edittext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in_edittext.png; sourceTree = "<group>"; };
 		01D0988A1B0CB4370098795C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		01D0988B1B0CB4370098795C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		01D0988E1B0CBC020098795C /* hm_btn_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_btn_menu.png; sourceTree = "<group>"; };
+		01D098901B0CBD6F0098795C /* menu_bar_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_bar_button.png; sourceTree = "<group>"; };
+		01D098921B0CCAF30098795C /* hm_image_paloalto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_image_paloalto.png; sourceTree = "<group>"; };
+		01D098941B0CD6C20098795C /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = controllers/MenuTableViewController.swift; sourceTree = "<group>"; };
+		01D098961B0CE8120098795C /* hm_badge_picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_badge_picture.png; sourceTree = "<group>"; };
+		01D098981B0CEE180098795C /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewController.swift; path = controllers/abs/BaseTableViewController.swift; sourceTree = "<group>"; };
+		01F01A381B0CF91600FD7494 /* CircledImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircledImageView.swift; path = views/CircledImageView.swift; sourceTree = "<group>"; };
 		01F312E01B0C9CB0008E1F52 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = controllers/AnimationViewController.swift; sourceTree = "<group>"; };
 		01F942521B064EA900FE7028 /* NotificationTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		59BC9E78F955C4DB66C86547 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +195,8 @@
 		01587E831B0A0965001206F9 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				0172FE0D1B0CFA63006E18DD /* custom */,
+				01D0989A1B0CEF5A0098795C /* views */,
 				01587E841B0A0975001206F9 /* controllers */,
 			);
 			name = ui;
@@ -194,6 +210,7 @@
 				01587E961B0A2B84001206F9 /* LoginController.swift */,
 				01587EA21B0A4674001206F9 /* HomeViewController.swift */,
 				01F312E01B0C9CB0008E1F52 /* AnimationViewController.swift */,
+				01D098941B0CD6C20098795C /* MenuTableViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -209,6 +226,7 @@
 		01587E861B0A0993001206F9 /* drawable */ = {
 			isa = PBXGroup;
 			children = (
+				01D0988D1B0CBBEF0098795C /* home */,
 				01587E981B0A303B001206F9 /* login */,
 				01587E881B0A0C54001206F9 /* splash */,
 				015457E51B06172F0035E520 /* Images.xcassets */,
@@ -265,8 +283,17 @@
 			isa = PBXGroup;
 			children = (
 				01587EA01B0A437B001206F9 /* BaseViewController.swift */,
+				01D098981B0CEE180098795C /* BaseTableViewController.swift */,
 			);
 			name = abs;
+			sourceTree = "<group>";
+		};
+		0172FE0D1B0CFA63006E18DD /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				01F01A381B0CF91600FD7494 /* CircledImageView.swift */,
+			);
+			name = custom;
 			sourceTree = "<group>";
 		};
 		01D098881B0CB4050098795C /* library */ = {
@@ -284,6 +311,24 @@
 				01D0988B1B0CB4370098795C /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		01D0988D1B0CBBEF0098795C /* home */ = {
+			isa = PBXGroup;
+			children = (
+				01D098961B0CE8120098795C /* hm_badge_picture.png */,
+				01D098921B0CCAF30098795C /* hm_image_paloalto.png */,
+				01D098901B0CBD6F0098795C /* menu_bar_button.png */,
+				01D0988E1B0CBC020098795C /* hm_btn_menu.png */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		01D0989A1B0CEF5A0098795C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		2377D78BBD32760E0C479EEB /* Frameworks */ = {
@@ -390,10 +435,14 @@
 				01587E9C1B0A374A001206F9 /* sherpa_login_images.png in Resources */,
 				01587E911B0A1321001206F9 /* sherpa_splash.png in Resources */,
 				01587E8E1B0A0C64001206F9 /* logo_Sherpa.png in Resources */,
+				01D098971B0CE8120098795C /* hm_badge_picture.png in Resources */,
+				01D098931B0CCAF30098795C /* hm_image_paloalto.png in Resources */,
 				01587E8D1B0A0C64001206F9 /* globe.png in Resources */,
+				01D098911B0CBD6F0098795C /* menu_bar_button.png in Resources */,
 				01D098871B0CACC40098795C /* sign_in_edittext.png in Resources */,
 				01587E8A1B0A0C5E001206F9 /* bg_splash.png in Resources */,
 				01437A021B0B46B700BB2C4B /* Configurations.plist in Resources */,
+				01D0988F1B0CBC020098795C /* hm_btn_menu.png in Resources */,
 				015457E61B06172F0035E520 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,12 +496,15 @@
 			files = (
 				01587EA11B0A437B001206F9 /* BaseViewController.swift in Sources */,
 				015457E11B06172F0035E520 /* ViewController.swift in Sources */,
+				01D098951B0CD6C20098795C /* MenuTableViewController.swift in Sources */,
 				01587E971B0A2B84001206F9 /* LoginController.swift in Sources */,
 				015457DF1B06172F0035E520 /* AppDelegate.swift in Sources */,
 				015986251B0BA7F100AAE34A /* ControllerConstants.swift in Sources */,
 				01D0988C1B0CB4370098795C /* SWRevealViewController.m in Sources */,
 				01587E951B0A19A4001206F9 /* NavigationConstants.swift in Sources */,
 				01587EA31B0A4674001206F9 /* HomeViewController.swift in Sources */,
+				01F01A391B0CF91600FD7494 /* CircledImageView.swift in Sources */,
+				01D098991B0CEE180098795C /* BaseTableViewController.swift in Sources */,
 				01F312E11B0C9CB0008E1F52 /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

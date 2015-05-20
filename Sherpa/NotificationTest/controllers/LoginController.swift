@@ -20,6 +20,8 @@ class LoginController:BaseViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        userEditText.text = userName;
+        passwordEditText.text = userPassword;
     }
     
    
