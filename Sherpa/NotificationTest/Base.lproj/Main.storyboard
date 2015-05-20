@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4yk-0Z-7Np">
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="splash_screen" id="vXZ-lx-hvc" customClass="ViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="KTN-G1-nLo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.png" translatesAutoresizingMaskIntoConstraints="NO" id="pEn-I9-88W">
+                                <rect key="frame" x="-200" y="200" width="720" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_Sherpa.png" translatesAutoresizingMaskIntoConstraints="NO" id="QJg-jc-13f">
+                                <rect key="frame" x="69" y="118" width="182" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="IMm-4h-qzj"/>
+                                    <constraint firstAttribute="width" constant="182" id="dtc-sh-9aO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pEn-I9-88W" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="200" id="FTX-tj-A1G"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KTN-G1-nLo" secondAttribute="bottom" id="GKg-3V-EA2"/>
+                            <constraint firstAttribute="trailing" secondItem="pEn-I9-88W" secondAttribute="trailing" constant="-200" id="JGq-gi-nfW"/>
+                            <constraint firstItem="pEn-I9-88W" firstAttribute="top" secondItem="QJg-jc-13f" secondAttribute="bottom" constant="-100" id="OIn-zI-1Ss"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pEn-I9-88W" secondAttribute="bottom" constant="-200" id="RUY-l1-WRV"/>
+                            <constraint firstAttribute="centerX" secondItem="QJg-jc-13f" secondAttribute="centerX" id="SG3-GD-OVt"/>
+                            <constraint firstItem="KTN-G1-nLo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="VWh-VC-fAg"/>
+                            <constraint firstItem="pEn-I9-88W" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-200" id="cZ5-O2-Xbj"/>
+                            <constraint firstAttribute="trailing" secondItem="KTN-G1-nLo" secondAttribute="trailing" id="ggm-Rg-waK"/>
+                            <constraint firstItem="KTN-G1-nLo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mPC-AJ-Txu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fp0-e5-QGo"/>
+                    <connections>
+                        <segue destination="zgF-gH-1fd" kind="push" id="4J9-Kk-sly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="406"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="EX2-it-sof">
+            <objects>
+                <viewController storyboardIdentifier="login_screen" id="d9f-uh-fj9" customClass="LoginController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rD-Dg-0hc"/>
+                        <viewControllerLayoutGuide type="bottom" id="y5R-sx-3aZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mpg-Rg-ljr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9H-x1-22V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="pug-vP-Lid">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.png" translatesAutoresizingMaskIntoConstraints="NO" id="85t-Er-5YM">
+                                        <rect key="frame" x="-200" y="400" width="720" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_Sherpa.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-hu-KTT">
+                                        <rect key="frame" x="69" y="18" width="182" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="182" id="HaS-CF-fli"/>
+                                            <constraint firstAttribute="height" constant="182" id="kia-zX-OR1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UjN-Sg-Hxy">
+                                        <rect key="frame" x="46" y="208" width="229" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ISY-ce-Oxo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbp-mf-g7F">
+                                        <rect key="frame" x="46" y="246" width="229" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kcj-n4-cOc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pug-vP-Lid" secondAttribute="bottom" id="0E7-Fv-4ti"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qbp-mf-g7F" secondAttribute="trailing" constant="45" id="51J-eA-XLs"/>
+                                    <constraint firstAttribute="trailing" secondItem="pug-vP-Lid" secondAttribute="trailing" id="9hk-ue-a63"/>
+                                    <constraint firstItem="UjN-Sg-Hxy" firstAttribute="top" secondItem="VSP-hu-KTT" secondAttribute="bottom" constant="8" id="CIO-p6-i2e"/>
+                                    <constraint firstItem="Qbp-mf-g7F" firstAttribute="top" secondItem="UjN-Sg-Hxy" secondAttribute="bottom" constant="8" id="GbR-cY-18h"/>
+                                    <constraint firstAttribute="centerX" secondItem="VSP-hu-KTT" secondAttribute="centerX" id="KTC-PV-Azw"/>
+                                    <constraint firstAttribute="bottom" secondItem="85t-Er-5YM" secondAttribute="bottom" constant="-400" id="NuU-2k-nJZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="UjN-Sg-Hxy" secondAttribute="trailing" constant="45" id="RHR-rE-bsa"/>
+                                    <constraint firstItem="85t-Er-5YM" firstAttribute="top" secondItem="VSP-hu-KTT" secondAttribute="bottom" constant="200" id="StE-s6-0is"/>
+                                    <constraint firstItem="pug-vP-Lid" firstAttribute="top" secondItem="D9H-x1-22V" secondAttribute="top" id="WPg-RZ-eoy"/>
+                                    <constraint firstItem="85t-Er-5YM" firstAttribute="top" secondItem="D9H-x1-22V" secondAttribute="top" constant="400" id="YiV-JQ-FjK"/>
+                                    <constraint firstAttribute="trailing" secondItem="85t-Er-5YM" secondAttribute="trailing" constant="-200" id="afS-3p-86p"/>
+                                    <constraint firstItem="85t-Er-5YM" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="-200" id="c47-Kp-oW4"/>
+                                    <constraint firstItem="UjN-Sg-Hxy" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="46" id="kuQ-kf-yZL"/>
+                                    <constraint firstItem="Qbp-mf-g7F" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="46" id="la8-s6-ySt"/>
+                                    <constraint firstItem="pug-vP-Lid" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" id="vEg-2f-Y11"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D9H-x1-22V" firstAttribute="top" secondItem="mpg-Rg-ljr" secondAttribute="top" id="5cK-6i-ylV"/>
+                            <constraint firstAttribute="bottom" secondItem="D9H-x1-22V" secondAttribute="bottom" id="6rr-ps-dyW"/>
+                            <constraint firstAttribute="trailing" secondItem="D9H-x1-22V" secondAttribute="trailing" id="FTP-MN-IdK"/>
+                            <constraint firstAttribute="trailing" secondItem="D9H-x1-22V" secondAttribute="trailing" id="YWO-fe-JRI"/>
+                            <constraint firstItem="D9H-x1-22V" firstAttribute="leading" secondItem="mpg-Rg-ljr" secondAttribute="leading" id="v4Z-QR-HK9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KOB-CX-yx4"/>
+                    <connections>
+                        <segue destination="SI0-cb-8KI" kind="push" identifier="sequeToHome" id="inN-KM-FLk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8L-Qo-fMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="406"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="CDw-VR-lyP">
+            <objects>
+                <viewController storyboardIdentifier="home_screen" id="SI0-cb-8KI" customClass="HomeViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PdD-GP-U8O"/>
+                        <viewControllerLayoutGuide type="bottom" id="bvF-fb-PtI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bSO-iL-rbM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqN-98-Z6j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Uv-S9-0Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cq7-8b-VFO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4yk-0Z-7Np" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erX-Bu-XMu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ael-ig-PHg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNI-0G-vOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="406.99999999999994"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="qhf-W5-tob">
+            <objects>
+                <viewController storyboardIdentifier="animation_screen" id="zgF-gH-1fd" customClass="AnimationViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="js2-Eq-ON1"/>
+                        <viewControllerLayoutGuide type="bottom" id="LGf-p8-3b9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KSY-jq-MvN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="EN3-xQ-bhg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.png" translatesAutoresizingMaskIntoConstraints="NO" id="i4p-D8-hia">
+                                <rect key="frame" x="-200" y="200" width="720" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_Sherpa.png" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-gr-XY2">
+                                <rect key="frame" x="69" y="118" width="182" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="Fx8-nl-N9k"/>
+                                    <constraint firstAttribute="width" constant="182" id="zuo-rG-wO2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EN3-xQ-bhg" firstAttribute="leading" secondItem="KSY-jq-MvN" secondAttribute="leading" id="3Iz-18-GGM"/>
+                            <constraint firstItem="LGf-p8-3b9" firstAttribute="top" secondItem="i4p-D8-hia" secondAttribute="bottom" constant="-200" id="4rM-WD-Xjy"/>
+                            <constraint firstAttribute="trailing" secondItem="EN3-xQ-bhg" secondAttribute="trailing" id="5wi-cb-Cdk"/>
+                            <constraint firstItem="EN3-xQ-bhg" firstAttribute="top" secondItem="KSY-jq-MvN" secondAttribute="top" id="Hxv-2L-0Dn"/>
+                            <constraint firstAttribute="trailing" secondItem="i4p-D8-hia" secondAttribute="trailing" constant="-200" id="RRW-Q8-FAZ"/>
+                            <constraint firstAttribute="centerX" secondItem="lyW-gr-XY2" secondAttribute="centerX" id="VUt-st-uCx"/>
+                            <constraint firstItem="i4p-D8-hia" firstAttribute="top" secondItem="lyW-gr-XY2" secondAttribute="bottom" constant="-100" id="csP-cn-TvW"/>
+                            <constraint firstItem="i4p-D8-hia" firstAttribute="top" secondItem="KSY-jq-MvN" secondAttribute="top" constant="200" id="pNk-eY-Y87"/>
+                            <constraint firstItem="LGf-p8-3b9" firstAttribute="top" secondItem="EN3-xQ-bhg" secondAttribute="bottom" id="vGQ-f0-xRR"/>
+                            <constraint firstItem="i4p-D8-hia" firstAttribute="leading" secondItem="KSY-jq-MvN" secondAttribute="leading" constant="-200" id="wZJ-ua-t3p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r6b-bD-Goi"/>
+                    <connections>
+                        <outlet property="bottomGlobeConstraint" destination="4rM-WD-Xjy" id="Mjd-l7-xlX"/>
+                        <outlet property="logoBottomConstraint" destination="csP-cn-TvW" id="lZg-Od-K5S"/>
+                        <outlet property="topGlobeConstraint" destination="pNk-eY-Y87" id="FTf-Df-Wmo"/>
+                        <segue destination="d9f-uh-fj9" kind="push" id="Sou-di-RQn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ri-CE-Mtj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_splash.png" width="750" height="1335"/>
+        <image name="globe.png" width="1603" height="1603"/>
+        <image name="logo_Sherpa.png" width="514" height="566"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+</document>

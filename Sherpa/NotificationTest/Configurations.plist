@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>default</key>
+	<dict>
+		<key>BaseURL</key>
+		<string>mmx://54.176.142.218:5222</string>
+		<key>DomainName</key>
+		<string>mmx</string>
+		<key>AppId</key>
+		<string>j61i9c4n9js</string>
+		<key>ApiKey</key>
+		<string>6c41b050-f832-436a-9987-32c9859cf655</string>
+		<key>AnonymousSecret</key>
+		<string>008f524b-5d68-4a5e-93fb-e35abc03a0da</string>
+		<key>ShouldForceTLS</key>
+		<true/>
+		<key>AllowInvalidCertificates</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
