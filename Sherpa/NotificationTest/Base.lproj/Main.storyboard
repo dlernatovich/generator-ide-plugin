@@ -83,29 +83,59 @@
                                             <constraint firstAttribute="height" constant="182" id="kia-zX-OR1"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UjN-Sg-Hxy">
-                                        <rect key="frame" x="46" y="208" width="229" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ISY-ce-Oxo"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbp-mf-g7F">
-                                        <rect key="frame" x="46" y="246" width="229" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="sign_in_edittext.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qbp-mf-g7F">
+                                        <rect key="frame" x="45" y="246" width="230" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kcj-n4-cOc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-Lj-wjn">
+                                        <rect key="frame" x="117" y="297" width="86" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MZF-nN-YXS"/>
+                                            <constraint firstAttribute="width" constant="86" id="XW9-bx-keO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" red="0.45882352941176469" green="0.81176470588235294" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onLoginButtonPressed:" destination="d9f-uh-fj9" eventType="touchUpInside" id="f9W-Eu-1Ta"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eos-6b-MZq">
+                                        <rect key="frame" x="93" y="335" width="134" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="eRo-Xi-eMD"/>
+                                            <constraint firstAttribute="height" constant="30" id="rV8-Cs-gfI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <state key="normal" title="Frogot Password?">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" background="sign_in_edittext.png" translatesAutoresizingMaskIntoConstraints="NO" id="UjN-Sg-Hxy">
+                                        <rect key="frame" x="45" y="208" width="230" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ISY-ce-Oxo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="pug-vP-Lid" secondAttribute="bottom" id="0E7-Fv-4ti"/>
+                                    <constraint firstAttribute="centerX" secondItem="CDI-Lj-wjn" secondAttribute="centerX" id="0Rd-f1-z89"/>
+                                    <constraint firstAttribute="centerX" secondItem="eos-6b-MZq" secondAttribute="centerX" id="26R-go-zgP"/>
                                     <constraint firstAttribute="trailing" secondItem="Qbp-mf-g7F" secondAttribute="trailing" constant="45" id="51J-eA-XLs"/>
                                     <constraint firstAttribute="trailing" secondItem="pug-vP-Lid" secondAttribute="trailing" id="9hk-ue-a63"/>
                                     <constraint firstItem="UjN-Sg-Hxy" firstAttribute="top" secondItem="VSP-hu-KTT" secondAttribute="bottom" constant="8" id="CIO-p6-i2e"/>
+                                    <constraint firstItem="eos-6b-MZq" firstAttribute="top" secondItem="CDI-Lj-wjn" secondAttribute="bottom" constant="8" id="CjM-t7-UE3"/>
                                     <constraint firstItem="Qbp-mf-g7F" firstAttribute="top" secondItem="UjN-Sg-Hxy" secondAttribute="bottom" constant="8" id="GbR-cY-18h"/>
                                     <constraint firstAttribute="centerX" secondItem="VSP-hu-KTT" secondAttribute="centerX" id="KTC-PV-Azw"/>
                                     <constraint firstAttribute="bottom" secondItem="85t-Er-5YM" secondAttribute="bottom" constant="-400" id="NuU-2k-nJZ"/>
@@ -115,9 +145,10 @@
                                     <constraint firstItem="85t-Er-5YM" firstAttribute="top" secondItem="D9H-x1-22V" secondAttribute="top" constant="400" id="YiV-JQ-FjK"/>
                                     <constraint firstAttribute="trailing" secondItem="85t-Er-5YM" secondAttribute="trailing" constant="-200" id="afS-3p-86p"/>
                                     <constraint firstItem="85t-Er-5YM" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="-200" id="c47-Kp-oW4"/>
-                                    <constraint firstItem="UjN-Sg-Hxy" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="46" id="kuQ-kf-yZL"/>
-                                    <constraint firstItem="Qbp-mf-g7F" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="46" id="la8-s6-ySt"/>
+                                    <constraint firstItem="UjN-Sg-Hxy" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="45" id="kuQ-kf-yZL"/>
+                                    <constraint firstItem="Qbp-mf-g7F" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" constant="45" id="la8-s6-ySt"/>
                                     <constraint firstItem="pug-vP-Lid" firstAttribute="leading" secondItem="D9H-x1-22V" secondAttribute="leading" id="vEg-2f-Y11"/>
+                                    <constraint firstItem="CDI-Lj-wjn" firstAttribute="top" secondItem="Qbp-mf-g7F" secondAttribute="bottom" constant="21" id="vJQ-Jz-2H4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -132,6 +163,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="KOB-CX-yx4"/>
                     <connections>
+                        <outlet property="passwordEditText" destination="Qbp-mf-g7F" id="cJ4-kA-MGy"/>
+                        <outlet property="userEditText" destination="UjN-Sg-Hxy" id="Fll-QL-4IM"/>
                         <segue destination="SI0-cb-8KI" kind="push" identifier="sequeToHome" id="inN-KM-FLk"/>
                     </connections>
                 </viewController>
@@ -235,6 +268,7 @@
         <image name="bg_splash.png" width="750" height="1335"/>
         <image name="globe.png" width="1603" height="1603"/>
         <image name="logo_Sherpa.png" width="514" height="566"/>
+        <image name="sign_in_edittext.png" width="500" height="85"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

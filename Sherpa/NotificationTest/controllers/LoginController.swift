@@ -15,8 +15,8 @@ class LoginController:BaseViewController{
     @IBOutlet var passwordEditText: UITextField!
     
     
-    let userName:String! = "test";
-    let userPassword:String! = "test";
+    let userName:String! = "testuser";
+    let userPassword:String! = "testuser";
     
     override func viewDidLoad() {
         super.viewDidLoad();
