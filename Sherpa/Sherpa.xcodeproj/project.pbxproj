@@ -24,6 +24,21 @@
 		01587EA11B0A437B001206F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01587EA01B0A437B001206F9 /* BaseViewController.swift */; };
 		01587EA31B0A4674001206F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01587EA21B0A4674001206F9 /* HomeViewController.swift */; };
 		015986251B0BA7F100AAE34A /* ControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015986241B0BA7F100AAE34A /* ControllerConstants.swift */; };
+		016899ED1B0DFACC006D6C83 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899EC1B0DFACC006D6C83 /* MyPageViewController.swift */; };
+		016899EF1B0DFBE2006D6C83 /* MMXSampleCode in Resources */ = {isa = PBXBuildFile; fileRef = 016899EE1B0DFBE2006D6C83 /* MMXSampleCode */; };
+		016899F21B0DFC3C006D6C83 /* MeetingRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899F11B0DFC3C006D6C83 /* MeetingRoomsViewController.swift */; };
+		016899F51B0DFD10006D6C83 /* LocalInfromationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899F41B0DFD10006D6C83 /* LocalInfromationViewController.swift */; };
+		016899F81B0DFDAD006D6C83 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899F71B0DFDAD006D6C83 /* HelpViewController.swift */; };
+		016899FB1B0DFE63006D6C83 /* MMXListeningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899FA1B0DFE63006D6C83 /* MMXListeningService.swift */; };
+		016899FF1B0E24C4006D6C83 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016899FE1B0E24C4006D6C83 /* BaseCollectionViewCell.swift */; };
+		01689A041B0E277C006D6C83 /* BadgeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01689A031B0E277C006D6C83 /* BadgeCollectionCell.swift */; };
+		01689A061B0E27B4006D6C83 /* BadgeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01689A051B0E27B4006D6C83 /* BadgeCollectionCell.xib */; };
+		01689A081B0E2973006D6C83 /* hm_empty_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 01689A071B0E2973006D6C83 /* hm_empty_badge.png */; };
+		01689A0A1B0E2A05006D6C83 /* hm_badgerequest_icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 01689A091B0E2A05006D6C83 /* hm_badgerequest_icon_normal.png */; };
+		01689A101B0E3E2B006D6C83 /* ClassHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01689A0F1B0E3E2B006D6C83 /* ClassHelper.swift */; };
+		01689A131B0E573E006D6C83 /* SetUpTravelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01689A111B0E573E006D6C83 /* SetUpTravelCollectionCell.swift */; };
+		01689A141B0E573E006D6C83 /* SetUpTravelCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01689A121B0E573E006D6C83 /* SetUpTravelCollectionCell.xib */; };
+		01689A161B0E587E006D6C83 /* hm_concierge_icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 01689A151B0E587E006D6C83 /* hm_concierge_icon_normal.png */; };
 		0172FE0F1B0D06A5006E18DD /* icon_exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0172FE0E1B0D06A5006E18DD /* icon_exit.png */; };
 		0172FE111B0D074D006E18DD /* icon_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 0172FE101B0D074D006E18DD /* icon_help.png */; };
 		01D098871B0CACC40098795C /* sign_in_edittext.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D098861B0CACC40098795C /* sign_in_edittext.png */; };
@@ -71,6 +86,21 @@
 		01587EA01B0A437B001206F9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = controllers/abs/BaseViewController.swift; sourceTree = "<group>"; };
 		01587EA21B0A4674001206F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		015986241B0BA7F100AAE34A /* ControllerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerConstants.swift; path = Constants/ControllerConstants.swift; sourceTree = "<group>"; };
+		016899EC1B0DFACC006D6C83 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = controllers/MyPageViewController.swift; sourceTree = "<group>"; };
+		016899EE1B0DFBE2006D6C83 /* MMXSampleCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MMXSampleCode; sourceTree = "<group>"; };
+		016899F11B0DFC3C006D6C83 /* MeetingRoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeetingRoomsViewController.swift; path = controllers/MeetingRoomsViewController.swift; sourceTree = "<group>"; };
+		016899F41B0DFD10006D6C83 /* LocalInfromationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalInfromationViewController.swift; path = controllers/LocalInfromationViewController.swift; sourceTree = "<group>"; };
+		016899F71B0DFDAD006D6C83 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = controllers/HelpViewController.swift; sourceTree = "<group>"; };
+		016899FA1B0DFE63006D6C83 /* MMXListeningService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MMXListeningService.swift; path = singletons/MMXListeningService.swift; sourceTree = "<group>"; };
+		016899FE1B0E24C4006D6C83 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCollectionViewCell.swift; path = cells/abs/BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		01689A031B0E277C006D6C83 /* BadgeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadgeCollectionCell.swift; path = cells/BadgeCollectionCell.swift; sourceTree = "<group>"; };
+		01689A051B0E27B4006D6C83 /* BadgeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BadgeCollectionCell.xib; path = cells/BadgeCollectionCell.xib; sourceTree = "<group>"; };
+		01689A071B0E2973006D6C83 /* hm_empty_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_empty_badge.png; sourceTree = "<group>"; };
+		01689A091B0E2A05006D6C83 /* hm_badgerequest_icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_badgerequest_icon_normal.png; sourceTree = "<group>"; };
+		01689A0F1B0E3E2B006D6C83 /* ClassHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassHelper.swift; path = helpers/ClassHelper.swift; sourceTree = "<group>"; };
+		01689A111B0E573E006D6C83 /* SetUpTravelCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetUpTravelCollectionCell.swift; path = cells/SetUpTravelCollectionCell.swift; sourceTree = "<group>"; };
+		01689A121B0E573E006D6C83 /* SetUpTravelCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetUpTravelCollectionCell.xib; path = cells/SetUpTravelCollectionCell.xib; sourceTree = "<group>"; };
+		01689A151B0E587E006D6C83 /* hm_concierge_icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_concierge_icon_normal.png; sourceTree = "<group>"; };
 		0172FE0E1B0D06A5006E18DD /* icon_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_exit.png; sourceTree = "<group>"; };
 		0172FE101B0D074D006E18DD /* icon_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_help.png; sourceTree = "<group>"; };
 		01D098861B0CACC40098795C /* sign_in_edittext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in_edittext.png; sourceTree = "<group>"; };
@@ -146,6 +176,7 @@
 			children = (
 				01437A011B0B46B700BB2C4B /* Configurations.plist */,
 				015457DD1B06172F0035E520 /* Info.plist */,
+				016899EE1B0DFBE2006D6C83 /* MMXSampleCode */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +211,7 @@
 		01587E811B0A0954001206F9 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				016899F91B0DFE42006D6C83 /* singletons */,
 				01587E921B0A13CA001206F9 /* constants */,
 				01587E831B0A0965001206F9 /* ui */,
 				01587E821B0A095C001206F9 /* main */,
@@ -199,6 +231,8 @@
 		01587E831B0A0965001206F9 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				01689A0B1B0E39CA006D6C83 /* helper */,
+				016899FC1B0E247E006D6C83 /* cells */,
 				0172FE0D1B0CFA63006E18DD /* custom */,
 				01D0989A1B0CEF5A0098795C /* views */,
 				01587E841B0A0975001206F9 /* controllers */,
@@ -210,11 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				01587E9F1B0A4362001206F9 /* abs */,
-				015457E01B06172F0035E520 /* ViewController.swift */,
-				01587E961B0A2B84001206F9 /* LoginController.swift */,
-				01587EA21B0A4674001206F9 /* HomeViewController.swift */,
-				01F312E01B0C9CB0008E1F52 /* AnimationViewController.swift */,
-				01D098941B0CD6C20098795C /* MenuTableViewController.swift */,
+				016899E71B0DFA45006D6C83 /* sections */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -292,6 +322,130 @@
 			name = abs;
 			sourceTree = "<group>";
 		};
+		016899E71B0DFA45006D6C83 /* sections */ = {
+			isa = PBXGroup;
+			children = (
+				016899EA1B0DFA79006D6C83 /* login */,
+				016899E91B0DFA66006D6C83 /* navigation */,
+				016899E81B0DFA53006D6C83 /* home */,
+				016899EB1B0DFA92006D6C83 /* mypage */,
+				016899F01B0DFC0A006D6C83 /* mrooms */,
+				016899F31B0DFCA1006D6C83 /* linfromation */,
+				016899F61B0DFD92006D6C83 /* help */,
+			);
+			name = sections;
+			sourceTree = "<group>";
+		};
+		016899E81B0DFA53006D6C83 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				01587EA21B0A4674001206F9 /* HomeViewController.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		016899E91B0DFA66006D6C83 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				01D098941B0CD6C20098795C /* MenuTableViewController.swift */,
+			);
+			name = navigation;
+			sourceTree = "<group>";
+		};
+		016899EA1B0DFA79006D6C83 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				015457E01B06172F0035E520 /* ViewController.swift */,
+				01587E961B0A2B84001206F9 /* LoginController.swift */,
+				01F312E01B0C9CB0008E1F52 /* AnimationViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		016899EB1B0DFA92006D6C83 /* mypage */ = {
+			isa = PBXGroup;
+			children = (
+				016899EC1B0DFACC006D6C83 /* MyPageViewController.swift */,
+			);
+			name = mypage;
+			sourceTree = "<group>";
+		};
+		016899F01B0DFC0A006D6C83 /* mrooms */ = {
+			isa = PBXGroup;
+			children = (
+				016899F11B0DFC3C006D6C83 /* MeetingRoomsViewController.swift */,
+			);
+			name = mrooms;
+			sourceTree = "<group>";
+		};
+		016899F31B0DFCA1006D6C83 /* linfromation */ = {
+			isa = PBXGroup;
+			children = (
+				016899F41B0DFD10006D6C83 /* LocalInfromationViewController.swift */,
+			);
+			name = linfromation;
+			sourceTree = "<group>";
+		};
+		016899F61B0DFD92006D6C83 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				016899F71B0DFDAD006D6C83 /* HelpViewController.swift */,
+			);
+			name = help;
+			sourceTree = "<group>";
+		};
+		016899F91B0DFE42006D6C83 /* singletons */ = {
+			isa = PBXGroup;
+			children = (
+				016899FA1B0DFE63006D6C83 /* MMXListeningService.swift */,
+			);
+			name = singletons;
+			sourceTree = "<group>";
+		};
+		016899FC1B0E247E006D6C83 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				016899FD1B0E24A4006D6C83 /* abs */,
+				01689A001B0E26FF006D6C83 /* sections */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		016899FD1B0E24A4006D6C83 /* abs */ = {
+			isa = PBXGroup;
+			children = (
+				016899FE1B0E24C4006D6C83 /* BaseCollectionViewCell.swift */,
+			);
+			name = abs;
+			sourceTree = "<group>";
+		};
+		01689A001B0E26FF006D6C83 /* sections */ = {
+			isa = PBXGroup;
+			children = (
+				01689A011B0E270A006D6C83 /* home */,
+			);
+			name = sections;
+			sourceTree = "<group>";
+		};
+		01689A011B0E270A006D6C83 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				01689A031B0E277C006D6C83 /* BadgeCollectionCell.swift */,
+				01689A051B0E27B4006D6C83 /* BadgeCollectionCell.xib */,
+				01689A111B0E573E006D6C83 /* SetUpTravelCollectionCell.swift */,
+				01689A121B0E573E006D6C83 /* SetUpTravelCollectionCell.xib */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		01689A0B1B0E39CA006D6C83 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				01689A0F1B0E3E2B006D6C83 /* ClassHelper.swift */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
 		0172FE0D1B0CFA63006E18DD /* custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +474,9 @@
 		01D0988D1B0CBBEF0098795C /* home */ = {
 			isa = PBXGroup;
 			children = (
+				01689A151B0E587E006D6C83 /* hm_concierge_icon_normal.png */,
+				01689A091B0E2A05006D6C83 /* hm_badgerequest_icon_normal.png */,
+				01689A071B0E2973006D6C83 /* hm_empty_badge.png */,
 				0172FE101B0D074D006E18DD /* icon_help.png */,
 				0172FE0E1B0D06A5006E18DD /* icon_exit.png */,
 				01D098961B0CE8120098795C /* hm_badge_picture.png */,
@@ -436,21 +593,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016899EF1B0DFBE2006D6C83 /* MMXSampleCode in Resources */,
 				015457E41B06172F0035E520 /* Main.storyboard in Resources */,
 				0172FE111B0D074D006E18DD /* icon_help.png in Resources */,
+				01689A061B0E27B4006D6C83 /* BadgeCollectionCell.xib in Resources */,
 				01587E9A1B0A3045001206F9 /* screen_signin.png in Resources */,
+				01689A081B0E2973006D6C83 /* hm_empty_badge.png in Resources */,
 				01587E9C1B0A374A001206F9 /* sherpa_login_images.png in Resources */,
 				01587E911B0A1321001206F9 /* sherpa_splash.png in Resources */,
 				01587E8E1B0A0C64001206F9 /* logo_Sherpa.png in Resources */,
 				01D098971B0CE8120098795C /* hm_badge_picture.png in Resources */,
 				01D098931B0CCAF30098795C /* hm_image_paloalto.png in Resources */,
 				01587E8D1B0A0C64001206F9 /* globe.png in Resources */,
+				01689A161B0E587E006D6C83 /* hm_concierge_icon_normal.png in Resources */,
 				01D098911B0CBD6F0098795C /* menu_bar_button.png in Resources */,
 				01D098871B0CACC40098795C /* sign_in_edittext.png in Resources */,
+				01689A141B0E573E006D6C83 /* SetUpTravelCollectionCell.xib in Resources */,
 				01587E8A1B0A0C5E001206F9 /* bg_splash.png in Resources */,
 				01437A021B0B46B700BB2C4B /* Configurations.plist in Resources */,
 				01D0988F1B0CBC020098795C /* hm_btn_menu.png in Resources */,
 				0172FE0F1B0D06A5006E18DD /* icon_exit.png in Resources */,
+				01689A0A1B0E2A05006D6C83 /* hm_badgerequest_icon_normal.png in Resources */,
 				015457E61B06172F0035E520 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,14 +665,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01689A131B0E573E006D6C83 /* SetUpTravelCollectionCell.swift in Sources */,
+				016899FB1B0DFE63006D6C83 /* MMXListeningService.swift in Sources */,
 				01587EA11B0A437B001206F9 /* BaseViewController.swift in Sources */,
+				016899F51B0DFD10006D6C83 /* LocalInfromationViewController.swift in Sources */,
 				015457E11B06172F0035E520 /* ViewController.swift in Sources */,
 				01D098951B0CD6C20098795C /* MenuTableViewController.swift in Sources */,
+				01689A041B0E277C006D6C83 /* BadgeCollectionCell.swift in Sources */,
 				01587E971B0A2B84001206F9 /* LoginController.swift in Sources */,
+				016899F21B0DFC3C006D6C83 /* MeetingRoomsViewController.swift in Sources */,
 				015457DF1B06172F0035E520 /* AppDelegate.swift in Sources */,
 				015986251B0BA7F100AAE34A /* ControllerConstants.swift in Sources */,
 				01D0988C1B0CB4370098795C /* SWRevealViewController.m in Sources */,
+				016899ED1B0DFACC006D6C83 /* MyPageViewController.swift in Sources */,
+				016899FF1B0E24C4006D6C83 /* BaseCollectionViewCell.swift in Sources */,
 				01587E951B0A19A4001206F9 /* NavigationConstants.swift in Sources */,
+				01689A101B0E3E2B006D6C83 /* ClassHelper.swift in Sources */,
+				016899F81B0DFDAD006D6C83 /* HelpViewController.swift in Sources */,
 				01587EA31B0A4674001206F9 /* HomeViewController.swift in Sources */,
 				01F01A391B0CF91600FD7494 /* CircledImageView.swift in Sources */,
 				01D098991B0CEE180098795C /* BaseTableViewController.swift in Sources */,

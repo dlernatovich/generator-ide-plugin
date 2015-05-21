@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BadgeCollectionCell" id="Tot-8a-u36" customClass="BadgeCollectionCell" customModule="Sherpa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hm_empty_badge.png" translatesAutoresizingMaskIntoConstraints="NO" id="WgT-tO-6vd">
+                                <rect key="frame" x="8" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="6bL-eH-Ugh"/>
+                                    <constraint firstAttribute="height" constant="70" id="QPs-cb-zoV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Badge Required&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1t-CB-QDQ">
+                                <rect key="frame" x="48" y="35" width="166" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vrc-87-znk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-L8-rxC">
+                                <rect key="frame" x="230" y="0.0" width="90" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hm_badgerequest_icon_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="zR8-4L-d0M">
+                                        <rect key="frame" x="8" y="8" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="gB3-72-Ixm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Request" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="70" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-We-Xm8">
+                                        <rect key="frame" x="8" y="46" width="70" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.24313725490196078" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zR8-4L-d0M" secondAttribute="trailing" constant="12" id="1Y9-1I-Y8v"/>
+                                    <constraint firstAttribute="trailing" secondItem="yEW-We-Xm8" secondAttribute="trailing" constant="12" id="5Sz-TJ-xGF"/>
+                                    <constraint firstItem="yEW-We-Xm8" firstAttribute="leading" secondItem="Uv5-L8-rxC" secondAttribute="leading" constant="8" id="71j-zJ-pLK"/>
+                                    <constraint firstAttribute="width" constant="90" id="7Ep-VQ-i7I"/>
+                                    <constraint firstItem="zR8-4L-d0M" firstAttribute="top" secondItem="Uv5-L8-rxC" secondAttribute="top" constant="8" id="BZg-bQ-4J6"/>
+                                    <constraint firstItem="zR8-4L-d0M" firstAttribute="leading" secondItem="Uv5-L8-rxC" secondAttribute="leading" constant="8" id="MNO-We-uEv"/>
+                                    <constraint firstAttribute="bottom" secondItem="yEW-We-Xm8" secondAttribute="bottom" constant="8" id="NfA-2Y-qOj"/>
+                                    <constraint firstItem="yEW-We-Xm8" firstAttribute="top" secondItem="zR8-4L-d0M" secondAttribute="bottom" constant="8" id="rNF-Px-7Zw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uv5-L8-rxC" firstAttribute="leading" secondItem="z1t-CB-QDQ" secondAttribute="trailing" constant="16" id="AAp-Hx-nve"/>
+                            <constraint firstItem="WgT-tO-6vd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="PZq-aA-W5b"/>
+                            <constraint firstAttribute="bottom" secondItem="Uv5-L8-rxC" secondAttribute="bottom" id="exb-pM-V2n"/>
+                            <constraint firstAttribute="centerY" secondItem="WgT-tO-6vd" secondAttribute="centerY" id="lDP-Kh-nNu"/>
+                            <constraint firstAttribute="trailing" secondItem="Uv5-L8-rxC" secondAttribute="trailing" id="m5V-dz-MDS"/>
+                            <constraint firstItem="z1t-CB-QDQ" firstAttribute="leading" secondItem="WgT-tO-6vd" secondAttribute="trailing" constant="-30" id="sXp-QV-g6W"/>
+                            <constraint firstAttribute="centerY" secondItem="z1t-CB-QDQ" secondAttribute="centerY" id="xhB-Ti-q0l"/>
+                            <constraint firstItem="Uv5-L8-rxC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zlm-Pb-Vtd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="HmC-O9-NQ8"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="Tot-8a-u36" secondAttribute="leading" id="OYU-pk-GDe"/>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="VN4-n5-hwV"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="Tot-8a-u36" secondAttribute="top" id="xV0-5K-J58"/>
+            </constraints>
+            <size key="customSize" width="320" height="50"/>
+            <connections>
+                <outlet property="accesBadgeText" destination="z1t-CB-QDQ" id="byp-Uz-EyM"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="369"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hm_badgerequest_icon_normal.png" width="97" height="80"/>
+        <image name="hm_empty_badge.png" width="125" height="125"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

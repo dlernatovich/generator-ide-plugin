@@ -256,28 +256,41 @@
                                     <constraint firstItem="vfd-Ll-ite" firstAttribute="leading" secondItem="wYv-en-Ach" secondAttribute="leading" id="xub-dy-vOI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-nV-Fo1">
-                                <rect key="frame" x="117" y="273" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-ZH-SLj">
+                                <rect key="frame" x="0.0" y="100" width="320" height="468"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kHX-Pd-tA0">
+                                    <size key="itemSize" width="320" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lQ0-7b-ZwR" id="1tE-c2-mUZ"/>
+                                    <outlet property="delegate" destination="lQ0-7b-ZwR" id="GFc-7C-Xj7"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dQV-ZH-SLj" firstAttribute="leading" secondItem="H1O-74-SMP" secondAttribute="leading" id="0Nv-X3-06t"/>
+                            <constraint firstItem="dQV-ZH-SLj" firstAttribute="top" secondItem="wYv-en-Ach" secondAttribute="bottom" id="6p4-jp-qiT"/>
                             <constraint firstItem="wYv-en-Ach" firstAttribute="leading" secondItem="H1O-74-SMP" secondAttribute="leading" id="M5i-yJ-NEs"/>
+                            <constraint firstItem="dei-vj-z7J" firstAttribute="top" secondItem="dQV-ZH-SLj" secondAttribute="bottom" id="PO5-bH-mgH"/>
                             <constraint firstItem="wYv-en-Ach" firstAttribute="top" secondItem="H1O-74-SMP" secondAttribute="top" id="bQ8-sQ-FXl"/>
+                            <constraint firstAttribute="trailing" secondItem="dQV-ZH-SLj" secondAttribute="trailing" id="iEb-gI-xA2"/>
                             <constraint firstAttribute="trailing" secondItem="wYv-en-Ach" secondAttribute="trailing" id="ui0-qY-63D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cY3-FX-pzC"/>
                     <connections>
-                        <outlet property="menuButton" destination="5hM-Yo-2Yu" id="n4n-uY-HEi"/>
+                        <outlet property="currentCollectionView" destination="dQV-ZH-SLj" id="zou-fa-S6N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8e-9k-0zP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-827"/>
+            <point key="canvasLocation" x="1785" y="-827"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="Hdj-s4-eEm">
@@ -710,10 +723,10 @@
             </objects>
             <point key="canvasLocation" x="1125" y="406"/>
         </scene>
-        <!--Home View Controller-->
+        <!--My Page View Controller-->
         <scene sceneID="Inu-x1-THL">
             <objects>
-                <viewController id="Xto-0u-Uq0" customClass="HomeViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xto-0u-Uq0" customClass="MyPageViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ugN-Ig-g70"/>
                         <viewControllerLayoutGuide type="bottom" id="QAb-kW-GWd"/>
@@ -768,18 +781,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="msR-dO-M8i"/>
-                    <connections>
-                        <outlet property="menuButton" destination="UIS-cN-qt1" id="7EQ-1o-LBr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQk-yS-GxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="-827"/>
+            <point key="canvasLocation" x="2194" y="-827"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Meeting Rooms View Controller-->
         <scene sceneID="aId-6B-cOv">
             <objects>
-                <viewController id="2Sy-Si-suX" customClass="HomeViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Sy-Si-suX" customClass="MeetingRoomsViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zfa-pd-ErU"/>
                         <viewControllerLayoutGuide type="bottom" id="cq2-vl-VOJ"/>
@@ -834,18 +844,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jGD-nd-GoT"/>
-                    <connections>
-                        <outlet property="menuButton" destination="wx8-1Q-Vi0" id="xkl-1M-Rbk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7MH-Di-gnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2588" y="-827"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Local Infromation View Controller-->
         <scene sceneID="xwd-1A-t8f">
             <objects>
-                <viewController id="Dw5-Ct-BFS" customClass="HomeViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dw5-Ct-BFS" customClass="LocalInfromationViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XeG-ob-OQf"/>
                         <viewControllerLayoutGuide type="bottom" id="hi2-6j-TT7"/>
@@ -900,18 +907,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jj1-KW-yvC"/>
-                    <connections>
-                        <outlet property="menuButton" destination="CKw-l9-pYE" id="rDI-vG-FpF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSW-QR-xfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2960" y="-827"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="LNf-ok-Wve">
             <objects>
-                <viewController id="5Uv-rx-XKg" customClass="HomeViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Uv-rx-XKg" customClass="HelpViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XNH-K3-zcH"/>
                         <viewControllerLayoutGuide type="bottom" id="LYR-is-yG9"/>
@@ -966,9 +970,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LcB-mE-luC"/>
-                    <connections>
-                        <outlet property="menuButton" destination="Vb7-Jd-Oqk" id="d0v-ZY-QcA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k88-eD-3Ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

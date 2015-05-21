@@ -8,57 +8,53 @@
 
 import UIKit
 
-class HomeViewController:BaseViewController, MMXClientDelegate {
+class HomeViewController:BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-    @IBOutlet var menuButton: UIButton!
+    @IBOutlet var currentCollectionView: UICollectionView!
+    
+    let dataCells:[AnyClass]! = [
+        BadgeCollectionCell.classForCoder(),
+        SetUpTravelCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+        BadgeCollectionCell.classForCoder(),
+    ];
     
     override func viewDidLoad() {
         super.viewDidLoad();
         enableNavigationMenuRecognizer();
+        
+        ClassHelper.registerCollectionCellForClass(currentCollectionView, aClass: BadgeCollectionCell.classForCoder());
+        ClassHelper.registerCollectionCellForClass(currentCollectionView, aClass: SetUpTravelCollectionCell.classForCoder());
     }
     
     @IBAction func onMenuOpenPressed(sender: UIButton) {
         onOpenNavigationMenu();
     }
     
-//    override func viewWillAppear(animated: Bool) {
-//        super.viewWillAppear(animated);
-//        MMXClient.sharedClient().delegate = self;
-//        connectToMMX();
-//    }
-//    
-//    
-//    func client(client: MMXClient!, didReceiveConnectionStatusChange connectionStatus: MMXConnectionStatus, error: NSError!) {
-//        if(connectionStatus == MMXConnectionStatus.Disconnected){
-//            showAlertDialog("MMX Disconected");
-//        }else if(connectionStatus == MMXConnectionStatus.Connected){
-//            showAlertDialog("MMXConnected");
-//        }else{
-//            showAlertDialog("Connection status: \(connectionStatus)");
-//        }
-//    }
-//    
-//    func client(client: MMXClient!, didReceivePubSubMessage message: MMXPubSubMessage!) {
-//        showAlertDialog("Receiving message: \(message)");
-//    }
-//    
-//    func createMMXConfiguration(){
-//        var mmxConfiguration:MMXConfiguration! = MMXConfiguration(name: "default");
-//        MMXClient.sharedClient().configuration = mmxConfiguration;
-//        MMXLogger.sharedLogger().startLogging();
-//        MMXLogger.sharedLogger().level = MMXLoggerLevel.Verbose;
-//        MMXClient.sharedClient().shouldAutoCreateUser = true;
-//    }
-//    
-//    func connectToMMX(){
-//        //Create connection
-//        MMXClient.sharedClient().configuration.credential = NSURLCredential(user: "tests", password: "tests", persistence: NSURLCredentialPersistence.None);
-//        MMXClient.sharedClient().connectWithCredentials();
-//    }
-//    
-//    func client(client: MMXClient!, didReceiveUserAutoRegistrationResult success: Bool, error: NSError!) {
-//        println("Registration result: \(success) with error: \(error)");
-//    }
+    //==================COLLECTION VIEW DELEGATE=================
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1;
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataCells.count;
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell:UICollectionViewCell! = collectionView.dequeueReusableCellWithReuseIdentifier(ClassHelper.getClassNameFromClass(dataCells[indexPath.row]), forIndexPath: indexPath) as! UICollectionViewCell;
+
+        return cell;
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
+        return CGRectMake(0, 0, self.view.frame.width, 90).size;
+    }
     
 }
