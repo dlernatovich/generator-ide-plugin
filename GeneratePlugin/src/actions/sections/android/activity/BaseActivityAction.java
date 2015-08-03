@@ -8,7 +8,10 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
  */
 public class BaseActivityAction extends BaseAction {
 
-    private final String CODE = "/**\n" +
+    private final String CODE = "protected static final int ON_BASE_ACTIVITY_RESULTS = 0x1;\n" +
+            "    protected static final String ON_RESULT_EXTRA_KEY = \"ON_RESULT_EXTRA_KEY\";\n" +
+            "\n" +
+            "    /**\n" +
             "     * Interface which provide the doing some action inside the Handler thread\n" +
             "     */\n" +
             "    protected interface OnActionPerformer {\n" +
@@ -86,6 +89,52 @@ public class BaseActivityAction extends BaseAction {
             "     */\n" +
             "    protected void startActivity(Class activtyClass) {\n" +
             "        startActivity(new Intent(this, activtyClass));\n" +
+            "    }\n" +
+            "\n" +
+            "    //====================ACTIVITY FOR RESULT METHODS====================\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide starting the Activity for results\n" +
+            "     *\n" +
+            "     * @param activtyClass activity which should be starting\n" +
+            "     */\n" +
+            "    protected void startActivityForResults(Class activtyClass) {\n" +
+            "        startActivityForResult(new Intent(this, activtyClass), ON_BASE_ACTIVITY_RESULTS);\n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onActivityResult(int requestCode, int resultCode, Intent data) {\n" +
+            "        // Check which request we're responding to\n" +
+            "        if (resultCode == RESULT_OK) {\n" +
+            "            // The user picked a contact.\n" +
+            "            // The Intent's data Uri identifies which contact was selected.\n" +
+            "            onActivityResult(requestCode, data);\n" +
+            "        }\n" +
+            "\n" +
+            "    }\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide the action when activity return result\n" +
+            "     *\n" +
+            "     * @param data current intent\n" +
+            "     */\n" +
+            "    protected void onActivityResult(int requestCode, Intent data) {\n" +
+            "\n" +
+            "    }\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide the sending of the Activity results\n" +
+            "     *\n" +
+            "     * @param extraValue current extra value\n" +
+            "     */\n" +
+            "    protected void sendActivityResult(String extraValue) {\n" +
+            "        if (extraValue == null) {\n" +
+            "            extraValue = \"\";\n" +
+            "        }\n" +
+            "        Intent intent = new Intent();\n" +
+            "        intent.putExtra(ON_RESULT_EXTRA_KEY, extraValue);\n" +
+            "        setResult(RESULT_OK, intent);\n" +
+            "        onBackPressed();\n" +
             "    }\n" +
             "\n" +
             "    /**\n" +
