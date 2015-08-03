@@ -8,7 +8,15 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
  */
 public class BaseActivityAction extends BaseAction {
 
-    private final String CODE = "protected static final int NONE_MENU = Integer.MIN_VALUE;\n" +
+    private final String CODE = "/**\n" +
+            "     * Interface which provide the doing some action inside the Handler thread\n" +
+            "     */\n" +
+            "    protected interface OnActionPerformer {\n" +
+            "        void onActionPerform();\n" +
+            "    }\n" +
+            "\n" +
+            "    protected static final int NONE_MENU = Integer.MIN_VALUE;\n" +
+            "    protected final Handler MAIN_THREAD_HANDLER = new Handler();\n" +
             "\n" +
             "    @Override\n" +
             "    protected void onCreate(Bundle savedInstanceState) {\n" +
@@ -116,6 +124,21 @@ public class BaseActivityAction extends BaseAction {
             "        for (View view : views) {\n" +
             "            view.setOnClickListener(this);\n" +
             "        }\n" +
+            "    }\n" +
+            "\n" +
+            "    /**\n" +
+            "     * Method which provide the doing action on UI thread after the delaying time\n" +
+            "     *\n" +
+            "     * @param delayTime       delaying time (in seconds)\n" +
+            "     * @param actionPerformer current action\n" +
+            "     */\n" +
+            "    protected void runOnMainThread(double delayTime, final OnActionPerformer actionPerformer) {\n" +
+            "        MAIN_THREAD_HANDLER.postDelayed(new Runnable() {\n" +
+            "            @Override\n" +
+            "            public void run() {\n" +
+            "                actionPerformer.onActionPerform();\n" +
+            "            }\n" +
+            "        }, (int) (delayTime * 1000));\n" +
             "    }\n" +
             "\n" +
             "    //==========================ABSTRACT METHODS==============================\n" +

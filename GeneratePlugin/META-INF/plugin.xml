@@ -115,6 +115,18 @@
                 <group text="View" id="ArtPlugin.View" popup="true" icon="/icons/view_icon.png">
                     <action text="Error in EditText" id="ArtPlugin.EditTextError"
                             class="actions.sections.android.view.EditTextErrorAction"/>
+                    <action text="BaseView" id="ArtPlugin.BaseView"
+                            class="actions.sections.android.view.BaseViewAction"/>
+                </group>
+
+                <group text="Fragments" id="ArtPlugin.Fragments" popup="true" icon="/icons/view_icon.png">
+                    <action text="BaseFragments" id="ArtPlugin.BaseFragments"
+                            class="actions.sections.android.fragments.BaseFragmentAction"/>
+                </group>
+
+                <group text="Utils" id="ArtPlugin.Utils" popup="true" icon="/icons/view_icon.png">
+                    <action text="AppLogger" id="ArtPlugin.AppLogger"
+                            class="actions.sections.android.utils.AppLoggerAction"/>
                 </group>
 
                 <group text="Helpers" id="ArtPlugin.Helpers" popup="true" icon="/icons/helper_icon.png">
