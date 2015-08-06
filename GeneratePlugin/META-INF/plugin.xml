@@ -153,6 +153,8 @@
                             class="actions.sections.android.helpers.RandomHelperAction"/>
                     <action text="Shared Preferences Helper" id="ArtPlugin.SharedPreferences"
                             class="actions.sections.android.helpers.SharedPrefaranceHelperAction"/>
+                    <action text="Intent Helper" id="ArtPlugin.IntentHelper"
+                            class="actions.sections.android.helpers.IntentHelperAction"/>
                 </group>
             </group>
 
