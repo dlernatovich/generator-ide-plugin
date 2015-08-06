@@ -89,6 +89,13 @@
                     <action text="Navigate with Google Maps" id="ArtPlugin.NavigateWithMaps"
                             class="actions.sections.android.maps.RoutingWithMapsAction"/>
                 </group>
+                <!--UI-->
+                <group text="UI" id="ArtPlugin.UI" popup="true" icon="/icons/activity_icon.png">
+                    <action text="On Editor Action Listener" id="ArtPlugin.OnEditorActionListener"
+                            class="actions.sections.android.ui.EditorActionListenerAction"/>
+                    <action text="Navigation Drawer" id="ArtPlugin.NavigationDrawer"
+                            class="actions.sections.android.ui.NavigationDrawerAction"/>
+                </group>
 
                 <!--Notification-->
                 <group text="Notification" id="ArtPlugin.Notification" popup="true" icon="/icons/notification_icon.png">
@@ -110,6 +117,8 @@
                             class="actions.sections.android.xml.ExampleListViewAction"/>
                     <action text="Shape sample" id="ArtPlugin.ShapeSample"
                             class="actions.sections.android.xml.ShapeSampleAction"/>
+                    <action text="Spinner style" id="ArtPlugin.SpinnerStyle"
+                            class="actions.sections.android.ui.SpinnerItemStyleAction"/>
                 </group>
 
                 <group text="View" id="ArtPlugin.View" popup="true" icon="/icons/view_icon.png">
