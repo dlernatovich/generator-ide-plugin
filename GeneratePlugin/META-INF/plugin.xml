@@ -155,6 +155,8 @@
                             class="actions.sections.android.helpers.SharedPrefaranceHelperAction"/>
                     <action text="Intent Helper" id="ArtPlugin.IntentHelper"
                             class="actions.sections.android.helpers.IntentHelperAction"/>
+                    <action text="URI Helper" id="ArtPlugin.URIHelper"
+                            class="actions.sections.android.helpers.URIHelperAction"/>
                 </group>
             </group>
 
