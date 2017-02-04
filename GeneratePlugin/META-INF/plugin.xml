@@ -67,6 +67,8 @@
                 <group text="Arrays" id="ArtPlugin.Arrays" popup="true" icon="/icons/formatting_icon.png">
                     <action class="actions.sections.java.arrays.ArrayFilterAction" id="ArtPlugin.ArrayFilterAction"
                             text="Array filter"/>
+                    <action class="actions.sections.java.arrays.JoinAction" id="ArtPlugin.JoinAction"
+                            text="Join array objects"/>
                 </group>
 
             </group>
